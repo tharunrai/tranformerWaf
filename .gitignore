@@ -100,9 +100,10 @@ data/temp/
 *.tmp
 *.temp
 
-# ML model cache (keep wafModel/ but ignore cache)
-wafModel/.cache/
-wafModel/temp/
+# ML model files and cache - exclude everything in wafModel/
+wafModel/
+wafModel/*
+wafModel/**/*
 
 # Backend data storage
 backend/data/*.json
