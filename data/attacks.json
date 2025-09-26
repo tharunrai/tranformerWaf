@@ -1,0 +1,32 @@
+[
+  {
+    "method": "GET",
+    "path": "/login?user=admin' OR '1'='1",
+    "headers": {"User-Agent": "SQL Injection Bot"},
+    "body": ""
+  },
+  {
+    "method": "POST",
+    "path": "/search",
+    "headers": {"User-Agent": "XSS Scanner"},
+    "body": "<script>alert('xss')</script>"
+  },
+  {
+    "method": "GET",
+    "path": "/admin.php?id=1 UNION SELECT username,password FROM users",
+    "headers": {"User-Agent": "SQL Injection"},
+    "body": ""
+  },
+  {
+    "method": "POST",
+    "path": "/contact",
+    "headers": {"User-Agent": "XSS Attack"},
+    "body": "<img src=x onerror=alert(1)>"
+  },
+  {
+    "method": "GET",
+    "path": "/../../../etc/passwd",
+    "headers": {"User-Agent": "Path Traversal"},
+    "body": ""
+  }
+]
