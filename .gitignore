@@ -122,3 +122,6 @@ coverage/
 .local/
 local_config.json
 dev_settings.json
+
+# Safetensor files
+*.safetensor
